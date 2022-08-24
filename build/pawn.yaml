@@ -1,0 +1,21 @@
+site: ""
+
+user: Aiuraa
+repo: test-pawn
+tag: 0.0.1
+
+entry: ../src/main.pwn
+output: gamemodes/main.amx
+
+dependencies:
+    - pawn-lang/samp-stdlib
+    - pawn-lang/YSI-Includes@5.x
+
+local: true
+
+build:
+    constants:
+        MAX_PLAYERS: "100"
+
+runtime:
+    maxplayers: 1000
