@@ -1,9 +1,7 @@
 site: ""
-
 user: Aiuraa
 repo: test-pawn
 tag: 0.0.1
-
 entry: ../src/main.pwn
 output: gamemodes/main.amx
 
@@ -15,7 +13,8 @@ local: true
 
 build:
     constants:
-        MAX_PLAYERS: "100"
+        MAX_PLAYERS: "1000"
+        YSI_NO_HEAP_MALLOC: ""
 
 runtime:
     maxplayers: 1000
