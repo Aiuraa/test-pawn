@@ -51,7 +51,7 @@ main()
     gives some huge sizes + you NEVER should do any of this at all (1. using silly macro, 2. using worst code). 
 */
 
-// Inside junkfunc macro functions, there is `junk_xxx` variable which is 2 dimentional array, this is considered
+// Inside junkfunc macro functions, there is `junk_xxx` variable which is 2 dimensional array, this is considered
 // to be the worst code ever written because 1. you don't even need that huge sizes, and 2. you are just wasting
 // the precious memory provided by pawn.
 #define junkfunc%0(%1) forward%0(%1); public%0(%1) { static junk_%0[JUNK_SIZE][JUNK_SIZE]; print("Hello from "#%0); return 0; }
