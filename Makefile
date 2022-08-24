@@ -1,8 +1,5 @@
 
-test: build
-	cd build && sampctl package run
-
-build: ensure
+test: ensure
 	cd build && sampctl package build
 
 ensure:
