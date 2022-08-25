@@ -8,7 +8,7 @@
 
 // Capping the junk size to 10k, going little further than this will cause "disk full" error
 // causing your entire disk being eaten by compiler (i guess)
-#define JUNK_SIZE 1
+#define JUNK_SIZE 10_000
 
 // Having 1000 MAX_PLAYERS on single iterator is not good either, since foreach need to allocate some size
 // depending on how many players the code can possibly handle. This is why i said the lower the better but
@@ -28,7 +28,7 @@ main()
     // Making jump case from 0 to 100.000 is consider to be worst too
     // imagine wrote some code like this, why?.
     // You don't have to use this so often if `if` and `else` still possible.
-    switch (S3MP4K[0]) { case 0..2: { print("Hello World"); } }
+    switch (S3MP4K[0]) { case 0..100000: { print("Hello World"); } }
 
     // call our junkfunc to see the output
     func1(); func2(); func3(); func4(); 
